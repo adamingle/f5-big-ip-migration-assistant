@@ -23,9 +23,9 @@ You must know the master key password of the source device before setting up Mig
 
 For information about updating the device's master key, refer to [K9420: Installing UCS files containing encrypted passwords or passphrases](https://support.f5.com/csp/article/K9420).
 
-### Importing UCS files (BIG-IP 12.0.0 and later)
+### Importing UCS files (BIG-IP 12.1.0 and later)
 
-If your source device is running 12.0.0 or later, you can use Migration Assistant to import the UCS file. To do so, perform the following procedure:
+If your source device is running 12.1.0 or later, you can use Migration Assistant to automatically generate and import the UCS file. To do so, perform the following procedure:
 
 1. In Migration Assistant, click the **BIG-IP Devices** tab.
 2. Click **Add Device**.
@@ -38,7 +38,7 @@ If your source device is running 12.0.0 or later, you can use Migration Assistan
 9. In the **Master Key** field, if you know the master key, enter it here. Otherwise, elect to reset the master key and enter a passphrase. Make sure you choose a strong passphrase.
 10. Click **Generate Archive**.
 
-### Importing UCS files (BIG-IP 11.1.0 - 11.6.x)
+### Importing UCS files (BIG-IP 11.1.0 - 11.6.x, and 12.0.0)
 
 Migration Assistant cannot generate UCS files on these BIG-IP versions, but you can generate a UCS file manually and import it to Migration Assistant.
 
