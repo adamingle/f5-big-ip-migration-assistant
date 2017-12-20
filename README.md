@@ -68,7 +68,7 @@ If migrating into a vCMP guest, you must configure any needed VLANs in the host 
 
 ## Where do I obtain it?
 
-Download the appropriate installer file from the latest version of Migration Assistant, hosted on [gitswarm](https://gitswarm.f5net.com/GSAT/f5ma-releases/tree/master).
+Download the appropriate installer file from the latest version of Migration Assistant, hosted on [GitHub](https://github.com/f5devcentral/f5-big-ip-migration-assistant/releases).
 
 ## What can go wrong?
 
