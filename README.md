@@ -29,7 +29,7 @@ You can configure multiple UCS files and destination BIG-IP instances, and you c
 ##### Migration Assistant performs the following tasks:
 
 1. Pre-migration validation checks
-1. UCS generation (for source instance running 12.0.0 and later)
+1. UCS generation (for source instance running 12.1.0 and later)
 1. Storing and managing UCS files
 1. Updating the master key on the source and destination device, if necessary
 1. Post-migration validation checks
@@ -58,7 +58,7 @@ To use Migration Assistant, the instance you want to migrate **from** _must_ be 
 |---|---|---|
 |9.x, 10.x, 11.0.0|Not supported|Not supported due to older versions lacking capabilities required for a migration|
 |11.1.0 - 11.6.x|12.1.3 and 13.1.0|You must generate and supply the UCS file manually|
-|12.0.0 and later|12.1.3 and 13.1.0|Migration Assistant generates UCS files|
+|12.1.0 and later|12.1.3 and 13.1.0|Migration Assistant generates UCS files|
 
 You cannot use this tool to migrate to or from a FIPS-enabled BIG-IP device.
 
