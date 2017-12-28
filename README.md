@@ -48,8 +48,6 @@ Migration Assistant manages the logistics of a configuration migration. Migratio
 
 Migration Assistant prompts you to enter a source BIG-IP (or upload a UCS file), the master key password, and destination BIG-IP instance. Once the tool obtains this information, it allows you to migrate the source BIG-IP configuration to the destination BIG-IP instance.
 
-The destination BIG-IP instance may be an F5 Amazon Machine Instance (AMI) from AWS instantiated by Migration Assistant in your AWS account, or it may be new BIG-IP hardware.
-
 ## Prerequisites
 
 To use Migration Assistant, the instance you want to migrate **from** _must_ be running 11.1.0 and later, and the instance you want to migrate **to** _must_ be running 12.1.3 or 13.1.0 and later:
