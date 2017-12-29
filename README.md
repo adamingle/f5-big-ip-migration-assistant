@@ -12,15 +12,13 @@
 
 The F5® BIG-IP® Migration Assistant is a tool freely distributed by F5 to facilitate migrating BIG-IP configurations between different platforms. Migration Assistant is a downloadable desktop application that coordinates the logistics required to migrate a BIG-IP configuration from one BIG-IP instance to another.
 
-Migration Assistant migrates a configuration to a new platform. The new platform can be an Amazon Web Services (AWS) instance that spins up in your account during the migration or new BIG-IP hardware.
-
 ## Why do I need it?
 
-You can use Migration Assistant when you have an existing BIG-IP instance and you want to replace the current hardware with different hardware, or shift the existing hardware configuration to reside in the AWS ecosystem.
+You can use Migration Assistant when you have an existing BIG-IP instance and you want to replace the current hardware with new hardware.
 
 ## What does it do?
 
-Migration Assistant does not perform the actual migration; the destination BIG-IP instance performs the actual migration. Configuration migrations depend on a User Configuration Set (UCS) file. UCS files contain all the data needed to back up and restore a BIG-IP instance, and are also used during platform migrations. 
+Migration Assistant does not perform the actual migration; the destination BIG-IP instance performs the actual migration. Configuration migrations depend on a User Configuration Set (UCS) file. UCS files contain all the data needed to back up and restore a BIG-IP instance, and are also used during platform migrations.
 
 For more information, refer to [K4423: Overview of UCS archives](https://support.f5.com/csp/article/K4423) and [K82540512: Overview of the UCS archive platform-migrate option](https://support.f5.com/csp/article/K82540512).
 
@@ -33,12 +31,6 @@ You can configure multiple UCS files and destination BIG-IP instances, and you c
 1. Storing and managing UCS files
 1. Updating the master key on the source and destination device, if necessary
 1. Post-migration validation checks
-
-##### For AWS instances, Migration Assistant also performs the following tasks:
-
-1. Choose the destination instance image type
-1. Build out a Virtual Private Cloud (VPC)
-1. Spin up other AWS resources required
 
 ## How does it work?
 
@@ -70,7 +62,7 @@ Download the appropriate installer file from the latest version of Migration Ass
 
 ## What can go wrong?
 
-In some cases, Migration Assistant will not be able to successfully migrate a configuration from the source BIG-IP device to the destination BIG-IP device. Generally when this occurs, the destination BIG-IP device is unable to execute the __tmsh__ command successfully. In this case, Migration Assistant will attempt to roll back the destination BIG-IP configuration.
+In some cases, Migration Assistant will not be able to successfully migrate a configuration from the source BIG-IP device to the destination BIG-IP device. Generally when this occurs, the destination BIG-IP device is unable to execute the __tmsh__ command successfully. The **ucs load** command creates a backup of the original configuration prior to running the migration, which can be used to restore the BIG-IP if needed.
 
 Migration Assistant will show the output of the **ucs load** command on the BIG-IP device, which may help you to correct issues before you attempt to migrate again.
 
