@@ -14,7 +14,7 @@ The F5® BIG-IP® Migration Assistant is a tool freely distributed by F5 to faci
 
 ## Why do I need it?
 
-You can use Migration Assistant when you have an existing BIG-IP instance and you want to replace the current hardware with new hardware.
+You can use Migration Assistant when you have an existing BIG-IP instance and you want to move its configuration to another instance.
 
 ## What does it do?
 

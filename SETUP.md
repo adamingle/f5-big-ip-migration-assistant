@@ -77,7 +77,7 @@ If the migration is successful, the progress indicator migration row will disapp
 
 ## Support
 
-If you need support for F5 BIG-IP Migration Assistant, refer to the Migration Assistant forum at [F5 DevCentral](https://devcentral.f5.com).
+If you need support for F5 BIG-IP Migration Assistant, refer to the Migration Assistant forum at [F5 DevCentral](https://devcentral.f5.com), or file an [Issue](https://github.com/f5devcentral/f5-big-ip-migration-assistant/issues).
 
 If the BIG-IP device encounters an error loading the UCS file and you have a valid support contract, you can access support at [AskF5](https://support.f5.com/csp/home).
 
