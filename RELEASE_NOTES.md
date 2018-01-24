@@ -2,6 +2,8 @@
 
 ## Version 1.0.2
 
+This release is a bugfix release, as well as supporting VE migrations
+
 1. Added handling for intermittent iControlREST failures
 1. Added handling for static management IPs that drift to DHCP
 1. Added handling for UCS admin credentials
