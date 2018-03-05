@@ -1,17 +1,10 @@
 # Release Notes
 
-## Version 1.0.2
+## Version 1.0.3
 
-This release is a bugfix release, as well as supporting VE migrations
+This release contains bugfixes and some minor enhancements
 
-1. Added handling for intermittent iControlREST failures
-1. Added handling for static management IPs that drift to DHCP
-1. Added handling for UCS admin credentials
-1. Added handling for incorrect credentials detected during migration
-1. Remove temporary UCS from device upon receipt
-1. Fixed table sorting, all panels
-1. Fixed CPU info error
-1. Added auto-focus for initial form fields, all forms
-1. Fixed handling of warning level background task issues
-1. Added truncation for display data that can overrun UI layouts
-1. Added defensive checks for device metadata requests
+1. Added cascading deletes for device and archive record removals
+1. Reverse event logs such that newest rise to top
+1. Fix for device config parser
+1. Fix for nth element version comparisons
