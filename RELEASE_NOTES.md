@@ -1,10 +1,11 @@
 # Release Notes
 
-## Version 1.0.3
+## Version 1.0.4
 
 This release contains bugfixes and some minor enhancements
 
-1. Added cascading deletes for device and archive record removals
-1. Reverse event logs such that newest rise to top
-1. Fix for device config parser
-1. Fix for nth element version comparisons
+1. Additional handling for device data parser
+1. Additional handling for migration errors
+1. Removed license check for vCMP guests
+1. Added handling for licensing procedures that run longer than expected
+1. Fix migration list formatting
